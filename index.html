@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="dist/styles.css">
+</head>
+<body class="bg-gray-900 text-white flex">
+    <div class="h-screen flex flex-col justify-between">
+        <ul class="">
+            <li class="hover:bg-gray-700"><img class="h-auto opacity-50 hover:opacity-100 transition-opacity duration-200 p-1" width="60px" src="assets/icons/culture_white.svg" alt="Culture"></li>
+            <li class="hover:bg-gray-700"><img class="h-auto opacity-50 hover:opacity-100 transition-opacity duration-200 p-1" width="60px" src="assets/icons/language_white.svg" alt="Language"></li>
+        </ul>
+        <ul id="culture-icons" class="mt-8">
+            <li class="hover:bg-gray-700"><img class="h-auto opacity-50 hover:opacity-100 transition-opacity duration-200 p-1" width="60px" src="assets/icons/notes_white.svg" alt="Field Notes"></li>
+            <li class="hover:bg-gray-700"><img class="h-auto opacity-50 hover:opacity-100 transition-opacity duration-200 p-1" width="60px" src="assets/icons/journal_white.svg" alt="Field Journal"></li>
+            <li class="hover:bg-gray-700"><img class="h-auto opacity-50 hover:opacity-100 transition-opacity duration-200 p-1" width="60px" src="assets/icons/personal_white.svg" alt="Personal Journal"></li>
+            <li class="hover:bg-gray-700"><img class="h-auto opacity-50 hover:opacity-100 transition-opacity duration-200 p-1" width="60px" src="assets/icons/contact_white.svg" alt="Contact Journal"></li> 
+        </ul>
+        <ul class="">
+            <li class="hover:bg-gray-700"><img class="h-auto opacity-50 hover:opacity-100 transition-opacity duration-200 p-1" width="60px" src="assets/icons/account_white.svg" alt="Culture"></li>
+            <li class="hover:bg-gray-700"><img class="h-auto opacity-50 hover:opacity-100 transition-opacity duration-200 p-1" width="60px" src="assets/icons/settings_white.svg" alt="Language"></li>
+        </ul>
+    </div>
+    <div id="main-sidebar" class="w-full md:w-1/5 h-screen bg-gray-700 text-white p-5">
+        <!-- Culture Sidebar -->
+        <div id="culture-sidebar">
+            <h3>Culture sidebar here</h3>
+        </div>
+
+        <!-- Language Sidebar -->
+        <div id="language-sidebar" class="hidden">
+            <h2 class="text-2xl">Language Sidebar</h2>
+            <!-- Language Sidebar content goes here -->
+        </div>
+    </div>
+    <div class="w-full md:w-4/5 p-5">
+      <!-- Main content goes here -->
+      <h1 class="text-4xl">Hello, Electron and Tailwind CSS!</h1>
+    </div>
+
+<script src="renderer.js"></script>
+</body>
+</html>
